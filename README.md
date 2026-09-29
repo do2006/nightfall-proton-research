@@ -1,58 +1,108 @@
-# NightFall Proton — Public Research Release 1.0
+# NightFall Proton
 
-**Evidence for persistent, governed cognitive learning — without publishing the proprietary engine.**
+### Public Research & Verification Release
 
-NightFall Proton is a NightFall Technologies research system integrating durable cognitive state with the NightFall Mimetic Cognitive Fabric (MCF) and CSC learning path. This repository lets researchers, developers, partners, and customers inspect published claims, evaluation boundaries, and verification artifacts without receiving the production implementation.
+**Persistent, governed cognition with evidence-gated capability promotion, quarantine, and rollback.**
 
-**Company:** NightFall Technologies  
-**Canonical website:** https://www.nightfalltechnologies.com/  
-**Proton progress record:** https://www.nightfalltechnologies.com/progress#nmmq-implementations
+[![Public Release](https://img.shields.io/badge/release-v1.0.0-111111)](https://github.com/do2006/nightfall-proton-research/releases/tag/v1.0.0)
+[![Verification](https://github.com/do2006/nightfall-proton-research/actions/workflows/verify.yml/badge.svg)](https://github.com/do2006/nightfall-proton-research/actions/workflows/verify.yml)
+[![NightFall Technologies](https://img.shields.io/badge/NightFall-Technologies-8b0000)](https://www.nightfalltechnologies.com/)
 
-## What is being demonstrated
+> **Public proof. Private implementation.**  
+> This repository publishes falsifiable claims, evaluation methods, evidence summaries, and integrity checks for NightFall Proton while keeping the proprietary Proton/MCF/CSC engine private.
 
-The public evidence covers recurring-experience qualification, bounded candidate capabilities, counterfactual analysis, multiple proof classes, company/owner-authorized transactional promotion, bounded activation, drift quarantine, rollback/recovery controls, and cross-platform validation.
+**NightFall Technologies** · https://www.nightfalltechnologies.com/  
+**Current Proton milestone** · https://www.nightfalltechnologies.com/progress#nmmq-implementations  
+**Stable release** · https://github.com/do2006/nightfall-proton-research/releases/tag/v1.0.0
 
-The central lifecycle is: experience → recurrence → bounded counterfactual analysis → candidate → proof → authorization → transactional promotion → activation → monitoring → quarantine / rollback.
+---
 
-## Start here
+## Research question
 
-1. Read `docs/TECHNICAL_REPORT.md`.
-2. Inspect `evidence/EVIDENCE_MANIFEST.md` and `evidence/claims.json`.
-3. Run `python verify.py` to verify repository artifact hashes.
-4. Run `python benchmarks/run_public_checks.py` to evaluate the machine-readable public claims.
-5. Read `benchmarks/SPEC.md` and `demo/DEMONSTRATION_PROTOCOL.md` for the external evaluation design.
+How can a persistent agent convert repeated experience into reusable capability while preserving **evidence traceability, bounded applicability, explicit authority, failure-closed drift handling, quarantine, and rollback?**
 
-## Published evidence snapshot
+Proton's published lifecycle is:
+
+```text
+experience
+   ↓
+recurrence qualification
+   ↓
+bounded counterfactual analysis
+   ↓
+untrusted candidate
+   ↓
+replay + historical + adversarial + canary evidence
+   ↓
+explicit authorization
+   ↓
+transactional promotion
+   ↓
+bounded activation
+   ↓
+monitoring ──→ quarantine / rollback
+```
+
+## Evidence snapshot
 
 | Property | Published result |
+| --- | ---: |
+| Phase 17 scenarios | **120 / platform** |
+| Failure-injection cases | **36 / platform** |
+| Property executions | **10,000 / platform** |
+| Native WSL2 libFuzzer runs | **10,000** |
+| Sanitizer findings | **0** |
+| Recorded recurrence observations | **3** |
+| Recorded proof classes | replay · historical · adversarial · canary |
+| Recovery controls | rollback · quarantine |
+
+These are **NightFall-produced research results**, published for scrutiny. They are not represented as independent third-party certification.
+
+## Verify it
+
+```bash
+python verify.py
+python benchmarks/run_public_checks.py
+```
+
+The first command checks the repository evidence files against `SHA256SUMS.txt`. The second validates the machine-readable public claims in `evidence/claims.json`.
+
+## Research map
+
+| Start here | Purpose |
 | --- | --- |
-| Phase 17 scenarios | 120 passed per platform |
-| Failure-injection cases | 36 passed per platform |
-| Property executions | 10,000 per platform |
-| Native WSL2 libFuzzer runs | 10,000 |
-| Sanitizer findings | 0 |
-| Proton recurrence threshold demonstrated | 3 observations |
-| Proton proof classes recorded | replay, historical, adversarial, canary |
-| Recovery controls | rollback + quarantine |
+| [Technical report](docs/TECHNICAL_REPORT.md) | Architecture, lifecycle, verification properties, and scope |
+| [Claim → evidence matrix](evidence/CLAIM_MATRIX.md) | Maps each published claim to its evidence basis |
+| [Evidence manifest](evidence/EVIDENCE_MANIFEST.md) | Compact public evidence record |
+| [Machine-readable claims](evidence/claims.json) | Structured claims used by public checks |
+| [Black-box evaluation spec](benchmarks/SPEC.md) | How an external evaluator can challenge the claims |
+| [Demonstration protocol](demo/DEMONSTRATION_PROTOCOL.md) | Behavior-focused public demonstration sequence |
+| [Independent evaluation request](docs/INDEPENDENT_EVALUATION.md) | What we want third parties to test |
+| [Disclosure model](docs/DISCLOSURE_MODEL.md) | Exact public/private boundary |
 
-These are NightFall-produced research results. They are published for scrutiny and reproduction; they are not represented as independent third-party certification.
+## What is deliberately private
 
-## What is intentionally not here
+This is **not an open-source release of Proton**. The repository does not contain production Proton/MCF/CSC source, capability-generation and qualification internals, proprietary orchestration or algorithms, model artifacts, private databases, credentials, signing secrets, or infrastructure configuration.
 
-This is **not** an open-source release of Proton. Production Proton/MCF/CSC source, crystal-generation and qualification internals, proprietary algorithms and orchestration, model artifacts, private databases, credentials, private signing material, infrastructure details, and unrelated NightFall intellectual property remain private.
+The objective is **falsifiability without reconstruction**: enough information to challenge the published properties without providing a recipe for reproducing NightFall's proprietary system.
 
-See `docs/DISCLOSURE_MODEL.md` for the disclosure boundary.
+## Independent evaluation
 
-## Historical integrity
+Critical evaluation is welcome. We specifically want outside researchers and agent builders to test recurrence boundaries, candidate isolation, proof gating, scope enforcement, drift handling, quarantine, rollback, recovery, and whether the current evidence supports the claims being made.
 
-The August 2026 Phase 17 CSC Research Alpha certification covered an owner-controlled local research pilot and explicitly did not authorize public release at that time. Later September 2026 Proton integration and promotion work produced the Proton-specific evidence summarized here. This repository preserves that chronology rather than rewriting the earlier certification scope.
+See [Independent Evaluation](docs/INDEPENDENT_EVALUATION.md).
 
-## Verification philosophy
+## Historical scope
 
-The objective is **falsifiability without reconstruction**: publish enough information to test whether stated properties hold, while withholding implementation detail that would provide a recipe for reproducing NightFall's proprietary system.
+The August 2026 Phase 17 CSC Research Alpha certification covered an owner-controlled local research pilot and did **not** authorize public release at that time. Later September 2026 Proton integration and promotion work produced the Proton-specific evidence summarized here. This repository preserves that chronology.
 
-## Business and research
+## About NightFall Technologies
 
-NightFall Proton and the underlying NightFall technologies are developed by NightFall Technologies. For current project information, research chronology, business inquiries, and contact information, use the canonical NightFall Technologies website.
+NightFall Technologies is an independent technology R&D company developing systems across advanced computing, distributed cognition, security, communications, storage, and verifiable infrastructure.
 
-Copyright © 2026 NightFall Technologies. All rights reserved.
+**Website:** https://www.nightfalltechnologies.com/  
+**Contact:** dwayneoneill@nightfalltechnologies.com
+
+---
+
+Copyright © 2026 NightFall Technologies. All rights reserved. Publication of these research materials does not grant a license to the proprietary Proton, MCF, CSC, or other NightFall implementations.
