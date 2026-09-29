@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "NightFall Proton Public Research & Verification Release",
+  "alternateName": "NightFall Proton",
+  "version": "1.0.0",
+  "datePublished": "2026-09-28",
+  "codeRepository": "https://github.com/do2006/nightfall-proton-research",
+  "url": "https://github.com/do2006/nightfall-proton-research",
+  "mainEntityOfPage": "https://www.nightfalltechnologies.com/progress#nmmq-implementations",
+  "creator": {
+    "@type": "Organization",
+    "name": "NightFall Technologies",
+    "url": "https://www.nightfalltechnologies.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dwayne O'Neill",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "NightFall Technologies"
+    }
+  },
+  "description": "Public evidence, black-box evaluation specifications, integrity verification, and research documentation for NightFall Proton's evidence-gated persistent cognition work.",
+  "keywords": [
+    "NightFall Technologies",
+    "NightFall Proton",
+    "Mimetic Cognitive Fabric",
+    "Counterfactual Skill Crystallization",
+    "persistent cognition",
+    "continual learning",
+    "agent evaluation",
+    "cognitive architecture",
+    "capability promotion",
+    "rollback",
+    "quarantine",
+    "verification"
+  ],
+  "license": "https://github.com/do2006/nightfall-proton-research/blob/main/LICENSE.md"
+}
