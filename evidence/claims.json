@@ -1,0 +1,20 @@
+{
+  "schema_version": "nightfall.proton.public-claims.v1",
+  "product": "NightFall Proton",
+  "publisher": "NightFall Technologies",
+  "release": "Public Research Release 1.0",
+  "claims": [
+    {"id":"P17-SCENARIOS","statement":"Phase 17 passed 120 scenarios per platform.","windows":120,"wsl2":120},
+    {"id":"P17-FAILURE-INJECTION","statement":"Phase 17 passed 36 failure injections per platform.","windows":36,"wsl2":36},
+    {"id":"P17-PROPERTY","statement":"Phase 17 executed 10000 bounded property executions per platform.","windows":10000,"wsl2":10000},
+    {"id":"P17-FUZZ","statement":"Phase 17 recorded 10000 native WSL2 libFuzzer runs and zero sanitizer findings.","wsl2_libfuzzer_runs":10000,"sanitizer_findings":0},
+    {"id":"PROTON-RECURRENCE","statement":"proton-agency-v1 promotion record contains three recurring observations.","count":3},
+    {"id":"PROTON-VALIDATION","statement":"proton-agency-v1 records replay, historical, adversarial and canary proof classes.","classes":["replay","historical","adversarial","canary"]},
+    {"id":"PROTON-RECOVERY","statement":"proton-agency-v1 records rollback and quarantine behavior.","rollback_required":true,"quarantine":"block-activation"}
+  ],
+  "limitations": [
+    "Phase 17 certification was an owner-controlled local research pilot.",
+    "This package does not publish the proprietary Proton/MCF/CSC implementation.",
+    "Published hashes and summarized results are evidence anchors, not independent third-party certification."
+  ]
+}
